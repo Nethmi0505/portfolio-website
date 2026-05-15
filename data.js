@@ -51,8 +51,8 @@ window.PORTFOLIO_DATA = {
       links: { live: "#", code: "https://github.com/Nethmi0505/Movies-Review-Web-App" },
     },
     {
-      slug: "simple-shop-ecommerce",
-      title: "Simple Shop — E-Commerce Website",
+      slug: "Nexora-ecommerce",
+      title: "Nexora — E-Commerce Website",
       description: "A responsive e-commerce storefront built with pure HTML, CSS and JavaScript.",
       overview:
         "Designed and developed a clean e-commerce front-end focused on product layout, responsive design, and smooth UI interactions — all without a framework.",
