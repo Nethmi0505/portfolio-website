@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of W. Udara Nethmi — Software Engineering undergraduate passionate about frontend, QA and full-stack development." />
+    <title>Nethmi | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Nethmi</span>
+        </a>
+
+        <button class="icon-button nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Primary" data-nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a class="button small" href="./resume.pdf" download>Download CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="top" class="top-anchor" aria-hidden="true"></div>
+
+    <main id="main">
+      <!-- ========== HERO ========== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal is-visible" data-reveal>
+
+            <!-- Gradient chips rendered by JS -->
+            <div class="chip-row" data-chip-row aria-label="Roles"></div>
+
+            <h1 class="hero-title">W. Udara Nethmi</h1>
+
+            <!-- Typewriter subtitle: static intro + animated role line -->
+            <p class="hero-subtitle">
+              I'm a <strong>Software Engineering undergraduate</strong> with a passion for
+              building modern, user-friendly web applications.
+              <span class="typewriter-line">
+                <span class="typewriter-role" data-typewriter></span><span class="typewriter-cursor" aria-hidden="true"></span>
+              </span>
+            </p>
+
+            <div class="hero-actions">
+              <a class="button" href="#projects">View projects</a>
+              <a class="button ghost" href="#contact">Contact me</a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="pill">
+                <span class="dot" aria-hidden="true"></span>
+                Open to internships
+              </div>
+              <div class="links">
+                <a href="#" data-social="github" aria-label="GitHub profile">GitHub</a>
+                <a href="#" data-social="linkedin" aria-label="LinkedIn profile">LinkedIn</a>
+                <a href="#" data-social="email" aria-label="Email">Email</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card hero-card-photo reveal is-visible" aria-label="Profile photo" data-reveal>
+            <img class="hero-photo" src="./profile.jpeg" alt="W. Udara Nethmi"
+              onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'hero-photo-placeholder\'><span class=\'initials\'>UN</span></div>'" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm a passionate software engineering student with a strong interest in web development,
+              quality assurance, and creative problem-solving. I enjoy building modern, user-friendly
+              applications that combine clean design with efficient functionality.
+            </p>
+            <p>
+              I have hands-on experience with HTML, CSS, JavaScript, and basic backend technologies.
+              I'm also interested in QA — writing test cases, spotting bugs, and making sure things
+              actually work the way they should.
+            </p>
+            <p>
+              My goal is to grow as a developer, contribute to meaningful projects,
+              and keep turning ideas into real products.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card reveal" data-reveal>
+              <h3>Quick details</h3>
+              <dl class="kv">
+                <div>
+                  <dt>Location</dt>
+                  <dd>Colombo/Sri lanka</dd>
+                </div>
+                <div>
+                  <dt>University</dt>
+                  <dd>University of Wolverhampton (UK)</dd>
+                </div>
+                <div>
+                  <dt>Interests</dt>
+                  <dd>Frontend, QA,UI/UX, Full-stack</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SKILLS ========== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p>Tools and technologies I'm comfortable with (and actively improving).</p>
+          </div>
+          <div class="skills-grid" data-skills></div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p>Selected work. Each project has a short overview and links.</p>
+          </div>
+          <div class="projects-grid" data-projects></div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECT DETAIL ========== -->
+      <section id="project-detail" class="section" hidden data-project-detail>
+        <div class="container">
+          <div class="section-head">
+            <h2>Project details</h2>
+            <p class="muted">More information about the selected project.</p>
+          </div>
+
+          <div class="page-top">
+            <div class="breadcrumb">
+              <a href="#projects" data-project-back>← Back to projects</a>
+            </div>
+          </div>
+
+          <div class="detail-grid">
+            <section class="card">
+              <h1 data-detail-title>Project</h1>
+              <p class="muted" data-detail-desc></p>
+              <div class="divider"></div>
+              <h3>Overview</h3>
+              <p class="muted" data-detail-overview></p>
+              <div class="detail-actions" data-detail-actions></div>
+            </section>
+
+            <aside class="card">
+              <h3>Tech</h3>
+              <div class="project-badges" data-detail-tech></div>
+              <div class="divider"></div>
+              <h3>Highlights</h3>
+              <ul class="modal-list" data-detail-highlights></ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== EDUCATION ========== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Education</h2>
+            <p>What I studied and what I'm currently learning.</p>
+          </div>
+          <ol class="timeline" data-education></ol>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>If you want to collaborate or have an opportunity, send a message.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card reveal" data-reveal>
+              <h3>Message</h3>
+              <form class="contact-form" data-contact-form>
+                <label>
+                  <span>Name</span>
+                  <input name="name" type="text" autocomplete="name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label>
+                  <span>Message</span>
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="button" type="submit">Send Message</button>
+                <p class="form-hint">This opens your email app — no backend needed.</p>
+              </form>
+            </div>
+
+            <div class="card reveal" data-reveal>
+              <h3>Links</h3>
+              <div class="contact-links">
+                <a class="link-row" href="#" data-social="email">
+                  <span>Email</span>
+                  <span class="muted" data-social-value="email">yourname@email.com</span>
+                </a>
+                <a class="link-row" href="#" data-social="github">
+                  <span>GitHub</span>
+                  <span class="muted" data-social-value="github">@yourhandle</span>
+                </a>
+                <a class="link-row" href="#" data-social="linkedin">
+                  <span>LinkedIn</span>
+                  <span class="muted" data-social-value="linkedin">/in/your-handle</span>
+                </a>
+              </div>
+
+              <div class="divider"></div>
+
+              <h3>Availability</h3>
+              <p class="muted">Available for internships — add your preferred start date here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span data-year></span> W. Udara Nethmi. Built with HTML / CSS / JS.</p>
+        <a class="muted" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./data.js" defer></script>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
